@@ -1,0 +1,82 @@
+:root {
+    --font-size: 2vw;
+    --font-family: monospace;
+    --display-padding: 1vw;
+}
+
+body {
+    margin: 0xp;
+}
+
+#DocTitle {
+    position: absolute;
+    width: 100vw;
+    text-align: center;
+    top: 20%;
+
+    font-size: 10vw;
+}
+
+#input-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    translate: -50% -50%;
+
+    width: 40%;
+    aspect-ratio: 2;
+
+    border: 2px dashed black;
+    padding: var(--display-padding);
+
+    /* background-color: red; */
+}
+
+#input {
+    position: absolute;
+    width: calc(100% - 2 * var(--display-padding));
+    height: calc(100% - 2 * var(--display-padding));
+
+    resize: none;
+
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0);
+
+    caret-color: black;
+
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    overflow-wrap: break-word;
+
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+}
+
+#input-display {
+    position: absolute;
+    width: calc(100% - 2 * var(--display-padding));
+    height: calc(100% - 2 * var(--display-padding));
+
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+
+    /* white-space: pre-wrap; */
+    overflow-wrap: break-word;
+
+    /* user-select: none; */
+}
+
+.correct-char {
+
+}
+
+.missing-char {
+
+}
+
+.incorrect-char {
+    
+}
